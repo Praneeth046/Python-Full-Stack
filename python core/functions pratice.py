@@ -40,7 +40,33 @@ from functools import reduce
 
 ##10
 
-s=[5, 10, 15, 20, 25, 30]
-r=reduce(lambda a,b:a+b,filter(lambda x:x%5==0,map(lambda x:x**2,s)))
-print(r)
+# s=[5, 10, 15, 20, 25, 30]
+# r=reduce(lambda a,b:a+b,filter(lambda x:x%5==0,map(lambda x:x**2,s)))
+# print(r)
 
+
+
+##2
+# a= [1, 2, 3, 4]
+# b = [10, 20, 30, 40]
+# k=list(map(lambda x,y:x+y,a,b))
+# print(k)
+
+
+##3
+# n = [12, 15, 7, 18, 20, 21, 25]
+# k=list(filter(lambda x: (x%3==0) ^ (x%5==0),n))
+# print(k)
+
+
+##4
+# n = [1, 2, 3, 4]
+# k=reduce(lambda a,b:a+b,n,10)
+# print(k)
+
+
+##5
+# nums = [[1, 2], [3, 4], [5, 6]]
+# result = list(map(lambda x: x.append(10), nums))
+# print("Result:", nums)
+# print("Nums:", nums)
