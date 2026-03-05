@@ -66,12 +66,15 @@ from operator import truediv
 
 ## To print minimum digit from a given number
 
-n=int(input())
-min=9
-while n>0:
-    r=n%10
-    n=n//10
-    if r<min:
-        min=r
-print(min)
+# n=int(input())
+# min=9
+# while n>0:
+#     r=n%10
+#     n=n//10
+#     if r<min:
+#         min=r
+# print(min)
+
+
+
 
