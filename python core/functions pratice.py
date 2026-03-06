@@ -70,3 +70,35 @@ from functools import reduce
 # result = list(map(lambda x: x.append(10), nums))
 # print("Result:", nums)
 # print("Nums:", nums)
+class Book:
+    total_books = 0   # Class variable
+
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        Book.total_books += 1
+
+    @classmethod
+    def from_string(cls, book_str):
+        title, author = book_str.split("-")
+        return cls(title, author)
+
+    @staticmethod
+    def is_valid_title(title):
+        return len(title) >= 3
+
+
+# Using constructor
+if Book.is_valid_title("AI"):
+    b1 = Book("AI", "John")
+else:
+    print("Invalid title: AI")
+
+b2 = Book("Python", "Guido")
+
+# Using class method
+b3 = Book.from_string("DataScience-Jane")
+
+print(f"Total books: {Book.total_books}")
+print(b2.title, "-", b2.author)
+print(b3.title, "-", b3.author)
