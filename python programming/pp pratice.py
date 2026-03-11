@@ -76,5 +76,19 @@ from operator import truediv
 # print(min)
 
 
-
+#program to print next prime number to a given number
+def is_prime(n):
+    fc=0
+    for i in range(1,n+1):
+        if n%i==0:
+            fc+=1
+    if fc==2:
+        return True
+n=int(input())
+i=n+1
+while True:
+    if is_prime(i):
+        print(i)
+        break
+    i+=1
 
