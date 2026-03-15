@@ -77,18 +77,42 @@ from operator import truediv
 
 
 #program to print next prime number to a given number
-def is_prime(n):
-    fc=0
-    for i in range(1,n+1):
-        if n%i==0:
-            fc+=1
-    if fc==2:
-        return True
-n=int(input())
-i=n+1
-while True:
-    if is_prime(i):
-        print(i)
-        break
-    i+=1
+# def is_prime(n):
+#     fc=0
+#     for i in range(1,n+1):
+#         if n%i==0:
+#             fc+=1
+#     if fc==2:
+#         return True
+# n=int(input())
+# i=n+1
+# while True:
+#     if is_prime(i):
+#         print(i)
+#         break
+#     i+=1
 
+#print even and odd without using division operator
+#@using AND
+
+n=int(input())
+if n&1==0:
+    print("even")
+else:
+    print("odd")
+
+#@using OR
+
+n=int(input())
+if n|1==n+1:
+    print("even")
+else:
+    print("odd")
+
+#@using XOR
+
+n=int(input())
+if n^1==n+1:
+    print("even")
+else:
+    print("odd")
