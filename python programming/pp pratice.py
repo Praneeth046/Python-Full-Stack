@@ -57,7 +57,6 @@ from operator import truediv
 
 # n=int(input())
 # max=0
-# while n>0:
 #     r=n%10
 #     n=n//10
 #     if r>max:
@@ -68,6 +67,7 @@ from operator import truediv
 
 # n=int(input())
 # min=9
+# while n>0:
 # while n>0:
 #     r=n%10
 #     n=n//10
@@ -95,24 +95,39 @@ from operator import truediv
 #print even and odd without using division operator
 #@using AND
 
+# n=int(input())
+# if n&1==0:
+#     print("even")
+# else:
+#     print("odd")
+#
+# #@using OR
+#
+# n=int(input())
+# if n|1==n+1:
+#     print("even")
+# else:
+#     print("odd")
+#
+# #@using XOR
+#
+# n=int(input())
+# if n^1==n+1:
+#     print("even")
+# else:
+#     print("odd")
+
+# Program to print palindrome or Not
+
 n=int(input())
-if n&1==0:
-    print("even")
+t=n
+rev=0
+while n>0:
+    r=n%10
+    rev=rev*10+r
+    n=n//10
+if rev==t:
+    print("palindrome")
 else:
-    print("odd")
+    print("not a palindrome")
 
-#@using OR
-
-n=int(input())
-if n|1==n+1:
-    print("even")
-else:
-    print("odd")
-
-#@using XOR
-
-n=int(input())
-if n^1==n+1:
-    print("even")
-else:
-    print("odd")
