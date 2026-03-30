@@ -119,15 +119,32 @@ from operator import truediv
 
 # Program to print palindrome or Not
 
-n=int(input())
-t=n
-rev=0
-while n>0:
-    r=n%10
-    rev=rev*10+r
-    n=n//10
-if rev==t:
-    print("palindrome")
-else:
-    print("not a palindrome")
+# n=int(input())
+# t=n
+# rev=0
+# while n>0:
+#     r=n%10
+#     rev=rev*10+r
+#     n=n//10
+# if rev==t:
+#     print("palindrome")
+# else:
+#     print("not a palindrome")
 
+
+
+##patterns to print rectangle
+# r=int(input())
+# c=int(input())
+# for i in range(1,r+1):
+#     for j in range(1,c+1):
+#         print("*",end=" ")
+#     print()
+
+
+##patterns to print square
+n=int(input())
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print("*",end="  ")
+    print()
