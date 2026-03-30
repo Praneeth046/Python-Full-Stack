@@ -143,8 +143,16 @@ from operator import truediv
 
 
 ##patterns to print square
+# n=int(input())
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print("*",end="  ")
+#     print()
+
+## pattern
+
 n=int(input())
 for i in range(1,n+1):
     for j in range(1,n+1):
-        print("*",end="  ")
+        print(i,end=" ")
     print()
