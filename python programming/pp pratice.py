@@ -151,8 +151,31 @@ from operator import truediv
 
 ## pattern
 
+# n=int(input())
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print(i,end=" ")
+#     print()
+
+## hollow patterns rectangle
+
+# a=int(input())
+# b=int(input())
+# for i in range(1,a+1):
+#     for j in range(1,b+1):
+#         if (i==1 or i==a) or (j==1 or j==b):
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+## hallow patterns square
+
 n=int(input())
 for i in range(1,n+1):
     for j in range(1,n+1):
-        print(i,end=" ")
+        if i==1 or i==n or j==1 or j==n:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
     print()
