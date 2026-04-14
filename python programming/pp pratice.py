@@ -182,12 +182,24 @@ from operator import truediv
 
 ## hallow patterns  triangle
 
+# n=int(input())
+# for i in range(1,n+1):
+#     for j in range(1,n-i+1):
+#         print(" ",end="")
+#     for j in range(1,i+1):
+#         if j==1 or i==n or i==j:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+## hallow pattern
 n=int(input())
 for i in range(1,n+1):
-    for j in range(1,n-i+1):
+    for j in range(n-i):
         print(" ",end="")
-    for j in range(1,i+1):
-        if j==1 or i==n or i==j:
+    for j in range(1,n+1):
+        if i==1 or j==1 or i==n or j==n:
             print("*",end=" ")
         else:
             print(" ",end=" ")
