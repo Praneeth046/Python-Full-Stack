@@ -194,13 +194,35 @@ from operator import truediv
 #     print()
 
 ## hallow pattern
-n=int(input())
-for i in range(1,n+1):
-    for j in range(n-i):
-        print(" ",end="")
-    for j in range(1,n+1):
-        if i==1 or j==1 or i==n or j==n:
-            print("*",end=" ")
+# n=int(input())
+# for i in range(1,n+1):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     for j in range(1,n+1):
+#         if i==1 or j==1 or i==n or j==n:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+
+n = int(input())
+if n == 0:
+    print("Zero")
+else:
+    n = abs(n)
+    i = 0
+    for j in range(n):
+        if i == 0:
+            print("1", end="")
+        elif i == 1:
+            print("A", end="")
         else:
-            print(" ",end=" ")
-    print()
+            print("@", end="")
+
+        if j != n - 1:
+            print(", ", end="")
+
+        i += 1
+        if i == 3:
+            i = 0
