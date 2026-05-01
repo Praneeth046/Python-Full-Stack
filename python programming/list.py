@@ -42,23 +42,31 @@ l=[10,20,30,40,50,60,70,80,90]
 
 ## Rotation of list
 ## one way
+# l=list(map(int,input().split()))
+# for i in range(0,len(l)):
+#     t=l[0]
+#     for j in range(0,len(l)-1):
+#         l[j]=l[j+1]
+#     l[len(l)-1]=t
+#     print(l)
+#
+# ## another way
+# l=list((map(int,input().split())))
+# for i in range(len(l)):
+#     t=l[len(l)-1]
+#     for j in range(len(l)-1,0,-1):
+#         l[j]=l[j-1]
+#     l[0]=t
+#     print(l)
+
+
+## removing a particular element from the list
 l=list(map(int,input().split()))
-for i in range(0,len(l)):
-    t=l[0]
-    for j in range(0,len(l)-1):
-        l[j]=l[j+1]
-    l[len(l)-1]=t
-    print(l)
-
-## another way
-l=list((map(int,input().split())))
-for i in range(len(l)):
-    t=l[len(l)-1]
-    for j in range(len(l)-1,0,-1):
-        l[j]=l[j-1]
-    l[0]=t
-    print(l)
-
+n=int(input())
+for i in l:
+    if i==n:
+        l.remove(n)
+print(*l)
 
 
 
