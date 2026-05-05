@@ -180,6 +180,7 @@ from operator import truediv
 #             print(" ",end=" ")
 #     print()
 
+
 ## hallow patterns  triangle
 
 # n=int(input())
@@ -192,6 +193,7 @@ from operator import truediv
 #         else:
 #             print(" ",end=" ")
 #     print()
+
 
 ## hallow pattern
 # n=int(input())
@@ -206,23 +208,49 @@ from operator import truediv
 #     print()
 
 
-n = int(input())
-if n == 0:
-    print("Zero")
-else:
-    n = abs(n)
-    i = 0
-    for j in range(n):
-        if i == 0:
-            print("1", end="")
-        elif i == 1:
-            print("A", end="")
-        else:
-            print("@", end="")
+# n = int(input())
+# if n == 0:
+#     print("Zero")
+# else:
+#     n = abs(n)
+#     i = 0
+#     for j in range(n):
+#         if i == 0:
+#             print("1", end="")
+#         elif i == 1:
+#             print("A", end="")
+#         else:
+#             print("@", end="")
+#
+#         if j != n - 1:
+#             print(", ", end="")
+#
+#         i += 1
+#         if i == 3:
+#             i = 0
 
-        if j != n - 1:
-            print(", ", end="")
 
-        i += 1
-        if i == 3:
-            i = 0
+## program to print LCM of two numbers
+# a=int(input())
+# b=int(input())
+# i=1
+# while True:
+#     if i%a==0 and i%b==0:
+#         print(i)
+#         break
+#     i+=1
+
+
+## program to print area of triangle
+# b=float(input())
+# h=float(input())
+# area = 0.5*b*h
+# print(area)
+
+
+## program to genarate next n numbers to the given number
+# a=int(input())
+# b=int(input())
+# n=a+b
+# for i in range (a,n+1):
+#     print(i)
