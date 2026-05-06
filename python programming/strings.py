@@ -11,6 +11,15 @@
 
 
 ## Find the length of string
+# s=input()
+# n=len(s)
+# print(n)
+
+
+## Finding substring from a string
 s=input()
-n=len(s)
-print(n)
+s1=input()
+if s1 in s:
+    print("Found")
+else:
+    print("Not found")
