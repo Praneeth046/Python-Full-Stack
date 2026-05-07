@@ -254,3 +254,27 @@ from operator import truediv
 # n=a+b
 # for i in range (a,n+1):
 #     print(i)
+
+
+# even number
+n=int(input())
+if n%2==0:
+    print("even")
+else:
+    print("odd")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
