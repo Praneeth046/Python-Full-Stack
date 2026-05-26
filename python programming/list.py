@@ -1,4 +1,4 @@
-l=[10,20,30,40,50,60,70,80,90]
+# l=[10,20,30,40,50,60,70,80,90]
 # print(l)
 
 # for i in l:
@@ -61,12 +61,12 @@ l=[10,20,30,40,50,60,70,80,90]
 
 
 ## removing a particular element from the list
-# l=list(map(int,input().split()))
-# n=int(input())
-# for i in l:
-#     if i==n:
-#         l.remove(n)
-# print(*l)
+lst=list(map(int,input().split()))
+n=int(input())
+for i in lst:
+    if i==n:
+        lst.remove(n)
+print(*lst)
 
 
 
