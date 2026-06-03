@@ -257,14 +257,22 @@ from operator import truediv
 
 
 # even number
+# n=int(input())
+# if n%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+
 n=int(input())
-if n%2==0:
-    print("even")
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        c+=1
+if c==2:
+    print("prime")
 else:
-    print("odd")
-
-
-
+    print("not a prime")
 
 
 
